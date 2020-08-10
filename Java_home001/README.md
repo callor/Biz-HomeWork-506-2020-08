@@ -15,7 +15,10 @@
  #### BookEx_01 클래스 코드를 참조하여 BookService 클래스를 작성하시오.
  * 각 기능을 method로 분리하여 작성.
  * SRP(Single Responsiblity Principle : 단일책임원칙)  
-1개의 method에서는 1가지 일만을 수행한다.
+하나의 클래스, method에서는 1가지 책임(기능)만을 수행한다.  
+클래스, method 코드가 비대해 지면 분리시킬 필요가 있다.
+
+
 * method내에서 {}의 사용은 최소한으로 줄인다.
  
  
