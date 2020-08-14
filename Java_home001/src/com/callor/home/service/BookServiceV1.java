@@ -40,9 +40,9 @@ public class BookServiceV1 {
 	public void inputMain() {
 
 		while(true) {
-			
+			break;
 		}
-		return
+		return;
 		
 	}
 
