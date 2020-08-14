@@ -1,4 +1,4 @@
-package com.callor.home;
+package com.callor.book;
 
 import java.util.Scanner;
 
