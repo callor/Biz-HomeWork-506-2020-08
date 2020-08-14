@@ -1,6 +1,8 @@
-package com.callor.home.service;
+package com.callor.book.service;
 
 import java.util.Scanner;
+
+import com.callor.book.conf.Lines;
 
 public class BookServiceV1 {
 
@@ -40,29 +42,94 @@ public class BookServiceV1 {
 	public void inputMain() {
 
 		while(true) {
-			break;
+			System.out.println(Lines.dLines());
+			System.out.println("빛나리 도서관 도서정보 관리 V1");
+			System.out.println(Lines.sLines(50));
+			
+			this.strBCode = this.inputBCode();
+			if(strBCode.equals("QUIT")) {
+				break;
+			}
+
+			this.strBName = this.inputBName();
+			if(strBName.equals("QUIT")) {
+				break;
+			}
+			System.out.println(Lines.dLines());
+			
+			// 입력한 도서정보 출력
+			this.printBookInfo();
 		}
+		System.out.println("업무를 종료합니다!!!");
 		return;
 		
 	}
 
-	public String inputBCode() {
+	private String inputBCode() {
 
 		/*
 		 * 필드변수와 별도로 입력을 위해 생성한 지역변수
 		 */
-		String strBCode = scan.nextLine();
+		String strBCode = "";
 		while (true) {
 			System.out.print("도서코드(QUIT:종료) >> ");
-
+			strBCode = scan.nextLine();
+			
+			// QUIT 를 입력할 경우 QUIT 문자열을 리턴하여 업무 종료를 알린
+			if(strBCode.equals("QUIT")) {
+				return "QUIT";
+			}
+			
 			int intBCodeLength = strBCode.length();
 			if (intBCodeLength < 0 || intBCodeLength > 5) {
 				System.out.println("도서코드는 13자리 이내의 숫자로 입력하세요");
 				continue;
 			}
+
+			int intBCode = 0;
+			try {
+				intBCode = Integer.valueOf(strBCode);
+			} catch (Exception e) {
+				System.out.println("도서코드에 문자열이 포함되어 있습니다");
+				System.out.println("도서코드는 13자리 이내의 숫자로 입력하세요");
+			}
+			
+			strBCode = String.format("%013d",intBCode);
 			break;
 		}
 		return strBCode;
+	}
+	
+	private String inputBName() {
+
+		/*
+		 * 필드변수와 별도로 입력을 위해 생성한 지역변수
+		 */
+		String strBName = "";
+		while (true) {
+			System.out.print("도서명(QUIT:종료) >> ");
+			strBName = scan.nextLine();
+			
+			if(strBName.equals("QUIT")) {
+				return "QUIT";
+			}
+			
+			if (strBName.isEmpty()) {
+				System.out.println("도서명은 반드시 입력해야 합니다");
+				continue;
+			}
+			break;
+		}
+		return strBName;
+	}
+	
+	private void printBookInfo() {
+		System.out.println(Lines.dLines());
+		System.out.println("입력한 도서정보");
+		System.out.println(Lines.sLines());
+		System.out.printf("도서코드 : %s\n",this.strBCode);
+		System.out.printf("도서명 : %s\n",this.strBName);
+		System.out.println(Lines.dLines());
 	}
 
 }
