@@ -12,6 +12,8 @@ import java.util.Scanner;
  * 
  * 어떤 승객의 나이를 입력했을때 승객의 버스 요금이 얼마인지 출력하시오
  * 최소한의 if 문을 사용하여 계산하시오
+ * 
+ * 
  */
 public class BusPayEx_01 {
 	
