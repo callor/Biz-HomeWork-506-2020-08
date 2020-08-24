@@ -1,18 +1,15 @@
 package com.callor.game.service;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class BowllGameService {
 
 	private List<Integer> frames;
-	int currentStage;
 
 	// 인스턴스가 생성되면 새로 게임이 시작된 것이다.
 	public BowllGameService() {
 		frames = new ArrayList<Integer>();
-		currentStage = 0;
 	}
 
 	// 볼을 던진 횟수만큼 호출이 되며
@@ -25,7 +22,7 @@ public class BowllGameService {
 
 		int totalScore = 0;
 
-		System.out.println(frames.toString());
+		System.out.print(frames.toString());
 		
 		int size = frames.size();
 		for (int thisFrame = 0 ; thisFrame < size - 2; thisFrame ++) {

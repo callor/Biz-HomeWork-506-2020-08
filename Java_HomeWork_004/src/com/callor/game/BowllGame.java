@@ -19,13 +19,18 @@ public class BowllGame {
 		 */
 		String[] games = { 
 				"X X X X X X X X X XXX", 
-				"X 5/ 3/ 5/ 52 5- 5- 5- 9- XXX", 
+				"X 5/ 3/ 5/ 52 5- 5- 5- 9- XXX",
+				"-2 5- 3/ 5- 5- 6/ 9/ 3/ 2- 8/9",
 				"X 5/ 3/ 5/ 52 5/ 5/ 5/ 9/ XXX",
+				"32 54 3/ 5- 52 5/ 5/ 5/ 9/ 8/9",
 				"X X X 8/ 7/ 9/ 72 3- 72 63-", 
 				"-1 X X 8/ 7/ 9/ 72 3- 72 63-" 
-			};
+		};
 		
+		int gameCount = 0;
 		for(String game : games) {
+		
+			System.out.printf("%d 번째 게임 : ",++gameCount);
 			BowllGameService bg = new BowllGameService();
 			String[] rolls = game.replace(" ", "").split("");
 			int preGame = 10;
@@ -43,13 +48,8 @@ public class BowllGame {
 				}
 				bg.rolling(thisGame);
 				preGame = thisGame;
-
-			
 			}
-			System.out.println(bg.getScore());
+			System.out.printf(" ==> 게임 점수 : %d \n",bg.getScore());
 		}
-
-		
-
 	}
 }
