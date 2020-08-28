@@ -1,5 +1,11 @@
 package com.callor.pay.service;
 
+/**
+ * 
+ * @author 정**종
+ * @since 2020-08-28
+ * 
+ */
 public class JongService {
 
 	public void solution(int pay) {
