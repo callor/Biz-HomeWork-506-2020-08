@@ -25,9 +25,9 @@ public class JueService {
 		try {
 			// code를 Integer로 바꾸고 다시 문자열로 만든 이유가 뭘까요?
 			code = String.format("%05d", Integer.valueOf(code));
+			// if (Integer.valueOf(code) > 5) {
 			
 			// 자릿수를 검사하려면
-			// if (Integer.valueOf(code) > 5) {
 			if(code.length() > 5) {
 				System.out.println("도서코드는 1~5자리만 유효합니다");
 				System.out.println("다시 입력하세요");
