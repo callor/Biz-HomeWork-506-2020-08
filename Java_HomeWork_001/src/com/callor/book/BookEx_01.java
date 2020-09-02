@@ -35,7 +35,7 @@ public class BookEx_01 {
 			
 			int intBCodeLength = strBCode.length();
 			if(intBCodeLength < 0 || intBCodeLength > 5) {
-				System.out.println("도서코드는 13자리 이내의 숫자로 입력하세요");
+				System.out.println("도서코드는 5자리 이내의 숫자로 입력하세요");
 				continue;
 			}
 			
