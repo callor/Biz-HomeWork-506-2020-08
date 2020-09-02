@@ -8,9 +8,10 @@ import com.callor.book.domain.BookVO;
 
 public class JueService {
 
-	List<BookVO> bookList;
-	Scanner scan = new Scanner(System.in);
-	BookVO bookvo = new BookVO();
+	// 변수, 인스턴스는 private 이나 protected으로 선언하는 것이 좋습니다
+	private List<BookVO> bookList;
+	private Scanner scan = new Scanner(System.in);
+	private BookVO bookvo = new BookVO();
 
 	public JueService() {
 		bookList = new ArrayList<>();

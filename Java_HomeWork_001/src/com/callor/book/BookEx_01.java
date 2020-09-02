@@ -15,10 +15,6 @@ import java.util.Scanner;
  *  4. 도서명은 반드시 입력해야 함
  *  5. 도서명을 입력하지 않고 Enter를 누르면 도서명을 다시 입력받아야 함
  *  
- *  
- *  
- *  
- *   
  */
 public class BookEx_01 {
 
