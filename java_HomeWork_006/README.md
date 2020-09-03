@@ -39,3 +39,4 @@ swap 코드를 사용하는데 다음과 같은 순서로 만든다
 * intList에 1 부터 100까지 임의의 정수를 생성하여 10 번 add()를 수행한다.
 * intList에 담긴 값을 Console에 표시한다.
 * intList에 담긴 리스트값을 오름차순 정렬한 후 결과를 Console에 표시한다.
+* intList에 담긴 값을 서로 교환할때 get(), set() method를 활용.
