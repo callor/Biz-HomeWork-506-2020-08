@@ -11,3 +11,5 @@
 ### :bowling: [2020-08-25 볼링점수 계산](https://github.com/callor/Biz_HomeWork/tree/master/Java_HomeWork_004)
 
 ### :newspaper: [2020-08-28 화폐매수 계산](https://github.com/callor/Biz_HomeWork/tree/master/Java_HomeWork_005)
+
+### :up: [2020-09-03 배열, 리스트 정렬](https://github.com/callor/Biz_HomeWork/tree/master/java_HomeWork_006)
