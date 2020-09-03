@@ -29,10 +29,11 @@ j 값은 1 부터 7, 2 부터 7, 3 부터 7 이런 식으로 순회를 한다.
 <hr/>
 * 배열 i 위치의 값과, 배열 j 위치의 값을 교환할때  
 swap 코드를 사용하는데 다음과 같은 순서로 만든다
-* int temp = intArr[i] : 배열 i 번째 위치값을 temp변수에 임시 보관한다.
-* intArr[i] = intArr[j] : 배열 j 번째 위치값을 intArr[i] 배열에 저장한다.
-* intArr[j] = temp : 변수 temp에 임시 보관된 값을 intArr[j] 배열에 저장한다.
-* 이렇게 수행하면 intArr[i]의 배열 내용과 intArr[j]의 배열내용이 서로 교체 된다.
+1. int temp = intArr[i] : 배열 i 번째 위치값을 temp변수에 임시 보관한다.
+2. intArr[i] = intArr[j] : 배열 j 번째 위치값을 intArr[i] 배열에 저장한다.
+3. intArr[j] = temp : 변수 temp에 임시 보관된 값을 intArr[j] 배열에 저장한다.
+4. 이렇게 수행하면 intArr[i]의 배열 내용과 intArr[j]의 배열내용이 서로 교체 된다.
+
 <hr/>
 ### 요구사항
 * List<Integer> intList = new ArrayList<Integer>(); 리스트를 만든다
